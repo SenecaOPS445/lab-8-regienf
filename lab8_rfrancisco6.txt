@@ -1,0 +1,54 @@
+
+PLAY [Configure VM for OPS445] *************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [Update Apache httpd] *****************************************************
+ok: [vmlab]
+
+TASK [Install EPEL repository] *************************************************
+ok: [vmlab]
+
+TASK [Remove tree package] *****************************************************
+ok: [vmlab]
+
+TASK [Set hostname] ************************************************************
+ok: [vmlab]
+
+TASK [Create user with Seneca ID] **********************************************
+ok: [vmlab]
+
+TASK [Setup sudo access without password] **************************************
+ok: [vmlab]
+
+TASK [Create .ssh directory] ***************************************************
+ok: [vmlab]
+
+TASK [Setup SSH public key for password-less login] ****************************
+ok: [vmlab]
+
+TASK [Create directory structure for labs] *************************************
+ok: [vmlab] => (item=1)
+ok: [vmlab] => (item=2)
+ok: [vmlab] => (item=3)
+ok: [vmlab] => (item=4)
+ok: [vmlab] => (item=5)
+ok: [vmlab] => (item=6)
+ok: [vmlab] => (item=7)
+ok: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+ops445
+├── lab1
+├── lab2
+├── lab3
+├── lab4
+├── lab5
+├── lab6
+├── lab7
+└── lab8
+
+8 directories, 0 files
